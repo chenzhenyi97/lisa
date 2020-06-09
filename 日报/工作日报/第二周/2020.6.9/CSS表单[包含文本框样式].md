@@ -169,3 +169,13 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 ```
 响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果。
+```css
+{
+box-sizing:border-box; 
+}
+```
+是CSS3新增属性，了解这个属性，我们先从块级元素的盒子大小说起。
+
+通常一个块级元素实际所占宽高度=外边距（margin）+ 边界宽度(border-width) + 内边距（padding）+ 高度（height） /  宽度（width）
+
+如果设置了border-box，实际所占宽高度 = 设置的高度（height）/ 设置的宽度（width）+ 外边距（margin）
