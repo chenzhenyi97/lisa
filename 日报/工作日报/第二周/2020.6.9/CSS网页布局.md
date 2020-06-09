@@ -66,3 +66,12 @@
   }
 }
 ```
+
+## 底部区域
+
+略
+
+## 响应式网页布局
+
+
+https://www.runoob.com/css/css-website-layout.html
