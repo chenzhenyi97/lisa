@@ -105,4 +105,67 @@ input[type=text] {
 ```
 中placeholder="搜索.."表示的意思是属性提供可描述输入字段预期值的提示信息（hint）。该提示会在输入字段为空时显示，并会在字段获得焦点时消失。
 
+## 样式
 
+### 文本框（textarea）
+
+注意: 使用resize属性来禁用文本框可以重置大小的功能（一般拖动右下角可以重置大小）。
+```css
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+```
+resize: none|both|horizontal|vertical;
+
+### 下拉菜单（select）
+```css
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+```
+### 按钮
+```css
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ 
+/* 提示: 使用 width: 100% 设置全宽按钮 *
+```
+
+重要点：【响应式表单】
+```css
+/* 清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+为了使div中的元素整齐排列而防止呈现的内容元素有重叠等现象。
+```css
+/* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+```
+响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果。

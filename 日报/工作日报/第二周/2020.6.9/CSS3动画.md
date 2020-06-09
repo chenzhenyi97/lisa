@@ -109,3 +109,32 @@ animation-iteration-count 规定动画应该播放的次数。
 animation-direction 规定是否应该轮流反向播放动画。
 
 animation需要在@-webkit-keyframes{ }中进行帧动画的定义。
+```css
+div{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:move 5s infinite;
+-webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+}
+
+@keyframes move{
+from {top:0px;}
+to {top:200px;}
+}
+
+@-webkit-keyframes mymove{
+from {top:0px;}
+to {top:200px;} 
+}
+```
+注意：div中的keyframes的帧动画名称必须与后面的@keyframes调用一致；div中的-webkit-keyframes必须与后面的@-webkit-keyframes调用一致，否则没有相应的帧动画效果显示。
+
+***！！！transition和animation的区别：！！！***
+
+animation可以控制到每一帧，高版本的浏览器还支持css或者JS控制停止动画 以及获取动画当前状态等；
+
+translation只是一个过渡 只能设置 初始值和结束值。
+
+
