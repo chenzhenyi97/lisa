@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>尝试的DEMO</title>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <link rel="stylesheet" type="text/css" href="./images/mydemo.css">
+
+</head>
+
+
+
+
+
+</style>
+<body>
+    <div class="mydemo">
+        <div class="title">
+            尝试的DEMO
+        </div>
+        <div class="navigation_bar">
+            <ul>
+                <li>
+                    我的主页
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">我的信息</button>
+                        <div class="dropdown-content">
+                          <a>菜鸟教程</a>
+                          <a>www.runoob.com</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    我的文档
+                </li>
+                <li>
+                    联系到我
+                </li>
+                <li>
+                    本人登录
+                </li>
+            </ul>
+        </div>
+        <div class="home_page">
+            321
+        </div>
+    </div>
+
+    <div>
+        
+
+    </div>
+
+</body>
+</html>
