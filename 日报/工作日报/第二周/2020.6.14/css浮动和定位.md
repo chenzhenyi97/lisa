@@ -44,3 +44,40 @@ left、right、both：分别为清除左浮动、右浮动、两边浮动，主�
 < div style="clear:both" >< /div >
 
 新增盒子必须是块级元素不能是行内元素。
+
+>父级添加overflow
+
+其属性值设置为hidden、auto、overflow；
+
+>:after伪元素法
+```css
+.clearfix:after { 
+    clear:both;
+    content:"";
+    display:block;
+    visibility:hidden; 
+}
+--------------------------
+.clearfix{
+    *zoom:1;
+}
+调用：
+<div class="box clearfix"></div>
+
+```
+
+>双伪元素清除浮动
+```css
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+```
+
+![avatar](8.png)
