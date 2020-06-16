@@ -90,3 +90,11 @@ margin-left:版心宽度的一半。
 
 ![avatar](7.png)
 
+![avatar](8.png)
+
+![avatar](9.png)
+
+浮动元素不会压住标准流中文字，定位会压住。
+
+![avatar](10.png)
+
