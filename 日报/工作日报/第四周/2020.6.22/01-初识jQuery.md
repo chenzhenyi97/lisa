@@ -67,3 +67,39 @@ $();就代表了调用jQuery的核心函数
 >jquery对象
 
 jQuery对象就是一个伪数组。有0-length-1的属性并且有length属性。
+
+>属性和属性节点
+
+function person(){} 创建类
+
+var p = new person(); 创建对象实例化类
+
+属性是属于对象的，对象身上保存的变量。
+
+对象.属性名称 = 值；
+
+对象[ "属性名称" ] = 值；
+
+获取 
+
+对象.属性名称
+
+对象[ "属性名称" ]
+
+**什么是属性节点**
+
+    <span name="it666"></span>
+
+在编写HTML代码时，在HTML标签中添加的属性就是属性节点
+
+浏览器在找到span这个dom元素之后，展开看到的都是属性
+
+在attributes属性中保持的所有内容都是属性节点
+
+**设置、获取属性节点的值：**
+
+    var span = document.getElementsByTagName("span")[0];
+    span.setAttribute("name","czy");
+    console.log(span.getAttribute("name"));
+
+分别是设置和获取属性节点值
