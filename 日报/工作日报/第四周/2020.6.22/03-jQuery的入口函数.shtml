@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        window.onload = function(ev){
+            //原生取dom
+            var img = document.getElementsByTagName("img")[0];
+            console.log(img);
+            var width = document.getElementsByTagName("img").width;
+            console.log(width);
+            var width = window.getComputedStyle(img).width;
+            console.log(width);
+        };
+        //jquery取dom
+        $(document).ready(function(){
+            var $img = $("img")[0];
+            console.log($img);
+            var $width = $img.width;
+            console.log($width);
+        });
+        
+    </script>
+</head>
+<body>
+    <img src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" alt="">
+</body>
+</html>

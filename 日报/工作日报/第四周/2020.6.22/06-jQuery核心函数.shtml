@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            alert("hello");
+            //接收一个字符串选择器
+            var $box1 = $(".box1");
+            var $box2 = $("#box2");
+            console.log($box1);
+            console.log($box2);
+            //返回了一个jQuery对象，对象中保存了找到的bom元素
+            //接收一个字符串代码片段
+            var $p = $("<p>hello</p>");
+            console.log($p);
+            $box1.append($p);
+            //返回一个jQuery对象，对象中包含了创建的dom元素
+            //接收一个dom元素
+            var span = document.getElementsByTagName("span")[0];
+            console.log(span);
+            var $span = $(span);
+            console.log($span);
+            //会被包装成一个jQuery对象返回给我们
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div id="box2"></div>
+    <span></span>
+</body>
+
+</html>
