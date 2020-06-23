@@ -24,15 +24,25 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script>
         $(function () {
-            //事件冒泡是什么、阻止事件冒泡两种办法
-            // $(".son").myClick(function (event) {
-            //     alert("son");
-            // });
-            //事件不能通过eventName添加，必须通过on来绑定;必须通过trigger来触发
-            $(".son").on("myClick",function (event) {
-                alert("son");
+            /*
+            要想事件命名空间有效，必须满足两个条件：
+            1、事件通过on来绑定
+            2、通过trigger触发事件
+            */
+            $(".father").on("click.ls",function (event) {
+                alert("father click1");
             });
-            $(".son").trigger("myClick");
+            $(".father").on("click",function (event) {
+                alert("father click2");
+            });
+            $(".son").on("click.ls",function (event) {
+                alert("son click1");
+            });
+            /* 
+            利用trigger触发子元素带命名空间的事件，那么父元素带相同命名空间的事件也会被触发，而父元素没有相同命名空间的事件不会被触发
+            利用trigger触发子元素不带命名空间的事件，那么父元素所有相同类型事件都会被触发
+             */
+            $(".son").trigger("click.ls");
         });
     </script>
 </head>
