@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000000;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var btns = document.getElementsByTagName("button");
+            //html([val|fn])和原生js中的innerHTML一样
+            btns[0].onclick = function() {
+                $("div").html("<p>我是段落<span>我是span</span></p>");
+            }
+            btns[1].onclick = function() {
+                console.log($("div").html());
+            }
+
+            //text([val|fn])和原生js中的innerText一模一样
+            btns[2].onclick = function() {
+                $("div").text("<p>我是段落<span>我是span</span></p>");
+            }
+            btns[3].onclick = function() {
+                console.log($("div").text());
+            }
+
+            //val([val|fn|arr])
+            btns[4].onclick = function() {
+                $("input").val("<p>我是段落<span>我是span</span></p>");
+            }
+            btns[5].onclick = function() {
+                console.log($("input").val());
+            }
+
+        })
+    </script>
+
+</head>
+<body>
+    <button>设置HTML</button>
+    <button>获取HTML</button>
+    <button>设置text</button>
+    <button>获取text</button>
+    <button>设置value</button>
+    <button>获取value</button>
+    <div></div>
+    <input type="text">
+</body>
+</html>

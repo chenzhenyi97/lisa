@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            /*
+            //prop特点和attr一致
+            $("span").eq(0).prop("demo","czy111");
+            $("span").eq(1).prop("demo","czy123");
+            console.log($("span").prop("demo"));
+            //removeProp特点和removeAttr一致
+            $("span").removeProp("demo");
+            */
+
+            //prop方法不仅可以操作属性而且可以操作属性节点
+            //$("span").prop("class");
+            //$("span").prop("class","box");
+
+            console.log($("input").prop("checked")); //true false 更常用点布尔值
+            console.log($("input").attr("checked")); //checked undefined
+        });
+    </script>
+</head>
+<body>
+    <span class="span1" name="it666"></span>
+    <span class="span2" name="czy"></span>
+    <input type="checkbox" checked>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            /*
+            jquery中两种绑定事件的方式
+            1、eventName(fn);
+            编码效率高、部分事件jquery没有实现不能添加
+            2、on(eventName, fn);
+            编码效率低、所有事件都能添加
+            */
+            // $("button").click(function () {
+            //     alert("hello czy!");
+            // });
+            
+            //注意点：都可以添加多个相同或者不同类型事件不会覆盖
+            $("button").on("click", function () {
+                alert("hello czy!");
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>我是按钮</button>
+</body>
+</html>

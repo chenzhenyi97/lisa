@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            //事件冒泡是什么、阻止事件冒泡两种办法
+            $(".son").click(function (event) {
+                alert("son");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <a href="http://www.baidu.com"><span>我是百度</span></a>
+    <form action="http://www.taobao.com">
+        <input type="text">
+        <input type="submit">
+    </form>
+</body>
+</html>
