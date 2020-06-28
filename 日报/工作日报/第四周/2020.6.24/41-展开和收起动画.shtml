@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("button").eq(0).click(function (params) {
+                // $("div").css("display","block");
+                $("div").slideDown(1000,function (params) {
+                    //动画执行完毕之后调用
+                    alert("展开动画执行完毕");
+                });
+            });
+            $("button").eq(1).click(function (params) {
+                // $("div").css("display","none");
+                $("div").slideUp(1000,function (params) {
+                    //动画执行完毕之后调用
+                    alert("收起动画执行完毕");
+                });
+            });
+            $("button").eq(2).click(function (params) {
+                $("div").slideToggle(1000,function (params) {
+                    //动画执行完毕之后调用
+                    alert("切换动画执行完毕");
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+    <button>展开</button>
+    <button>收起</button>
+    <button>切换</button>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box {
+            width: 300px;
+            height: 450px;
+            margin: 50px auto;
+            border: 1px solid #000;
+
+        }
+
+        .box>h1 {
+            font-size: 20px;
+            line-height: 35px;
+            color: deeppink;
+            padding-left: 10px;
+            border: 1px dashed #ccc;
+        }
+
+        ul>li {
+            list-style: none;
+            padding: 5px 10px;
+            border: 1px dashed #ccc;
+        }
+
+        ul>li:nth-child(-n+3) span {
+            background-color: deeppink;
+        }
+
+        ul>li>span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 10px;
+        }
+        .content{
+            overflow: hidden;
+            display: none;
+        }
+        .content>img{
+            width: 80px;
+            height: 120px;
+            float: left;
+            margin-top: 5px;
+        }
+        .content>p{
+            width: 180px;
+            height: 120px;
+            float: right;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .current .content{
+            display: block;
+
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            /* //监听li移入事件
+            $("li").mouseenter(function () {
+                $(this).addClass("current");
+            });
+            //监听li移出事件
+            $("li").mouseleave(function () {
+               $(this).removeClass("current");
+            });
+ */
+            //简化
+            $("li").hover(function (params) {
+                $(this).addClass("current");
+            },function (params) {
+                $(this).removeClass("current");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h1>电影排行榜</h1>
+        <ul>
+            <li><span>1</span>电影排行榜
+                <div class="content">
+                    <img src="img/zl.jpg" alt="">
+                    <p>
+                        简介：《战狼》是由吴京执导的现代军事战争片，该片由吴京、余男、倪大红、斯科特·阿金斯
+                        、周晓鸥等主演。该影片属于国内首部3D动作战争电影，历时七年全力打造，《战狼》真实呈现了一场中外边境战争，也让堪称“东方之狼”的特种兵战队及高能战士首次登陆大银幕。讲述的是小人物成长为拯救国家和民族命运的孤胆英雄的传奇故事。
+                    </p>
+                </div>
+            </li>
+            <li><span>2</span>电影排行榜</li>
+            <li><span>3</span>电影排行榜</li>
+            <li><span>4</span>电影排行榜</li>
+            <li><span>5</span>电影排行榜</li>
+        </ul>
+    </div>
+</body>
+
+</html>

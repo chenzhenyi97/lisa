@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="public.css">
+    <title>HOME</title>
+</head>
+<script>
+
+</script>
+<body>
+    <div class="homepage">
+        <div class="main">
+            <div class="banner">
+                <div class="swiper">
+                    <div class="swiper-container">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pagenation">
+
+            </div>
+            <div class="mobile content">
+
+            </div>
+            <div class="research content">
+
+            </div>
+            <div class="lastNews">
+
+            </div>
+            <div class="opportunity content">
+
+            </div>
+            <div class="Collaboration">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

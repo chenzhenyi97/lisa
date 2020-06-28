@@ -1,0 +1,15 @@
+@media screen and (min-width: 769px){
+    .header{
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        /* fixed生成绝对定位的元素，相对于浏览器窗口进行定位。 */
+        z-index: 200;
+        /* z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+        background: red;
+        top: 0;
+        background: transparent;
+        font-size: 0;
+        min-width: 1320px;
+    }
+}
