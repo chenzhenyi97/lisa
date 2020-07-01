@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            /* 替换
+            replaceWith(content|fn) 替换所有匹配的元素为我们指定的元素
+            replaceAll(selector)  
+            */
+            $("button").click(function () {
+                // 新建元素
+                var $h6 = $("<h6>我是标题6</h6>");
+                // 替换元素
+                // $("h1").replaceWith($h6);
+                $h6.replaceAll("h1");
+            });
+        })
+    </script>
+</head>
+<body>
+    <button>替换节点</button>
+    <h1>我是标题1</h1>
+    <h1>我是标题2</h1>
+    <p>我是段落</p>
+</body>
+</html>

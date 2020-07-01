@@ -14,7 +14,7 @@
             var $box2 = $("#box2");
             console.log($box1);
             console.log($box2);
-            //返回了一个jQuery对象，对象中保存了找到的bom元素
+            //返回了一个jQuery对象，对象中保存了找到的dom元素
             //接收一个字符串代码片段
             var $p = $("<p>hello</p>");
             console.log($p);
