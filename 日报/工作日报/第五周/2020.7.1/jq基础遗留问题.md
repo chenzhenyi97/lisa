@@ -56,3 +56,23 @@ js中有5种数据类型：Undefined、Null、Boolean、Number和String。
 
 # map生成新的数组
 
+使用map方法可以简单的进行遍历修改，返回一个新的数组即可
+
+# stop().fadeIn(300)是什么？
+
+举个简单的例子：
+
+.stop().fadeIn(300).siblings().stop().fadeOut(300);含义？
+
+当前索引的元素停止动画，并且渐显(300毫秒)，同时兄弟节点停止动画，并且渐退(300毫秒)
+
+**解析：**
+```javascript
+$(".img li")
+    .eq(index)
+    .stop() // 停止前面返回元素的所有动画效果
+    .fadeIn(300) // 添加一个新动画，淡入，耗时 300 ms
+    .siblings() // 获取所有兄弟节点
+    .stop() // 停止前面返回元素的所有动画效果
+    .fadeOut(300); // 给所有兄弟节点添加新动画，淡出，耗时 300 ms
+```
