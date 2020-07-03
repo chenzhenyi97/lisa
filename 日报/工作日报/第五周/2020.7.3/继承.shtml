@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function A() {  //创建一个对象
+            this.abc=12;
+        };
+        A.prototype.show=function(){  //创建对象的方法
+            alert(this.abc);
+        };
+
+        function B() {  //继承A  
+            //this->new B()    
+            A.call(this);  //继承A的属性
+            //我的理解：用新设置的obj=new B()来代替A()中的this
+        }
+
+        // B.prototype=A.prototype; //继承A的方法
+        for(var i in A.prototype){
+            B.prototype[i] = A.prototype[i];
+        };
+
+        B.prototype.fn=function(){
+            alert("abc");
+        };
+
+        var obj=new B();
+        var objA=new A();
+        alert(obj.abc);
+        obj.show();
+        obj.fn();
+        objA.fn();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showPerson(name,qq) {   //不一样的东西放到构造函数里
+            this.name = name;
+            this.qq = qq;
+        }
+
+        showPerson.prototype.showName = function () {   //一样的东西放到原型里（类似于class）
+            alert("name:"+this.name);
+        };
+        showPerson.prototype.showQQ = function (){
+            alert("QQ:"+this.qq);
+        }
+
+        var obj = new showPerson("张三","1234567890");
+        var obj2 = new showPerson("李四","0987654321");
+
+        obj.showName();
+        obj.showQQ();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
