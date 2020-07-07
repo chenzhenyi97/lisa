@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--     <script src="js/jquery-1.12.4.min.js"></script> -->
+    <script>
+        /* 
+        1、jquery的本质是一个闭包（不用调用，立即执行函数）
+        2、jquery为什么要使用闭包来实现？（为了避免多个框架的冲突）
+        3、jquery如何让外界访问内部定义的局部变量？（window.xxx = xxx;）
+        4、jquery为什么要给自己传递一个window参数？（为了方便后期压缩代码，为了提升查找的效率不用到外部去找参数）
+        5、jquery为什么要给自己接收一个undefined参数？（方便后期压缩代码，IE9以下浏览器undefined可以被修改，为了保证内部使用的undefined不被修改，所以需要接收一个正确的undefined）
+        */
+        (function (window,undefined) {
+            var jQuery = function () {
+                return new jQuery.prototype.init();  //jQuery.fn = jQuery.prototype
+            }
+            jQuery.prototype = {
+                constructor: jQuery,
+            };
+            jQuery.prototype.init.prototype = jQuery.prototype;
+            window.jQuery = window.$ = jQuery
+        })(window);
+
+        /* (function test() {
+            console.log("hello");
+        })(); */
+
+        (function f1() {
+            var num = 10;
+            console.log(num);
+            window.num = num;
+        })();
+        (function f2() {
+            var num = 20;
+            console.log(num);
+        })();
+        console.log(num);
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>
