@@ -4,7 +4,7 @@
     <title>尝试的DEMO</title>
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand" />
-    <link rel="stylesheet" type="text/css" href="./images/mydemo.css">
+    <link rel="stylesheet" type="text/css" href="mydemo.css">
 
 </head>
 

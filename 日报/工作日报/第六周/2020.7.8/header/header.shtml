@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="header.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headermain">
+            <div class="header_center clear_float">
+                <div class="imgbox float_left"><img src="./images/home_navbar_logo.png" alt="" class="headerImg"></div>
+                <div class="nav float_left">
+                    <a href="#" class="home float_left">
+                        <p class=".nav_item">HOME</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">RESEARCH ACTIVITIES</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">INSTITUTES & CENTERS</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">NEWS & EVENTS</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">OPPORTUNITIES</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">COLLABORATION</p>
+                    </a>
+                    <a href="#" class="float_left">
+                        <p class=".nav_item">ABOUT</p>
+                    </a>
+                    <p class="Language float_left">
+                        <a href="#"><span class="ch">CH</span></a>
+                        <a href="#"><span>EN</span></a>
+                    </p>
+                    <img src="images/home_navbar_ic_seaech_s@2x.png" alt="" class="searchImg float_left">
+                </div>
+            </div>
+            <div class="header_hover">
+                <div class="header_hover_main">
+                    <div class="Address">
+                        <p class="title">VISIT US </p>
+                        <div class="item">
+                            <img src="./images/home_pop_add_n.png" alt="">
+                            <p>
+                                China Artificial Intelligence Town, 1818 Wenyi West Road, Hangzhou City, Zhejiang
+                                Province, China
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="./images/home_pop_tel_n.png" alt="">
+                            <p>
+                               (86) 0571-56390515
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="./images/home_pop_fax_n.png" alt="">
+                            <p>
+                               (86) 0571-56390666
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="./images/home_pop_email_n.png" alt="">
+                            <p>
+                               zhaopin@zhejianglab.com
+                            </p>
+                        </div>
+                        <p class="Office">Office of Global Engagement</p>
+                        <p class="Role">Our Role</p>
+                        <p class="Staff">Staff Directory</p>
+                    </div>
+                    <div class="Institutes">
+                        <p class="title">
+                            <img src="./images/home_pop_institutes_n.png" alt="">
+                            <span>INSTITUTES&CENTERS</span>
+                        </p>
+                        <div class="item">
+                            <p class="item_head">Intelligent Perception Research Institute</p>
+                            <p class="item_li"><a href="">Research Center for Quantum Sensing</a></p>
+                            <p class="item_li"><a href="">Research Center for Smart Sensing</a></p>
+                            <p class="item_li"><a href="">Research Center for Intelligent Chip</a></p>
+                            <p class="item_li"><a href="">Research Center for Optical Fiber Sensing</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="item_head">Future Network Research Institute</p>
+                            <p class="item_li"><a href="">Research Center for Intelligent Network</a></p>
+                            <p class="item_li"><a href="">Research Center for Industrial Internet</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="item_head">Artificial Intelligence Research Institute</p>
+                            <p class="item_li"><a href="">Research Center for Next-Generation Computing System</a></p>
+                            <p class="item_li"><a href="">Research Center for AI Algorithms and Platforms</a></p>
+                            <p class="item_li"><a href="">Research Center for Cyber Physical-Social System</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="item_head">Interdisciplinary Research Center</p>
+                            <p class="item_li"><a href="">Research Center for Intelligent Robot</a></p>
+                            <p class="item_li"><a href="">Research Center for Healthcare Data Science</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="item_head">Research Team</p>
+                        </div>
+                    </div>
+                    <div class="Research_News">
+                        <div class="Research">
+                            <p>
+                                <img src="./images/home_pop_research_n.png" alt="">
+                                <span>RESEARCH ACTIVITIES</span>
+                            </p>
+                            <p><a href="">Featured Projects</a></p>
+                            <p><a href="">Facilities & Platforms</a></p>
+                            <p><a href="">ZJ Lab Cup Global AI Competition</a></p>
+                            <p><a href="">ZJ Lab Open Subject</a></p>
+                        </div>
+                        <div class="News">
+                            <p>
+                                <img src="./images/home_pop_news_n.png" alt="">
+                                <span>NEWS & EVENTS</span>
+                            </p>
+                            <p><a href="">News</a></p>
+                            <p><a href="">Events</a></p>
+                            <p><a href="">ZJ Lab Cup Global AI Competition</a></p>
+                            <p><a href="">Multimedia</a></p>
+                        </div>
+                    </div>
+                    <div class="Opp_Col_Abo">
+                        <div class="Opportunities">
+                            <p>
+                                <img src="./images/home_pop_opportunities _n.png" alt="">
+                                <span>OPPORTUNITIES</span>
+                            </p>
+                            <p><a href="#">Careers(Full-Time / Part-time Positions)</a></p>
+                            <p><a href="#">Postdoctoral Programme</a></p>
+                            <p><a href="#">Recruitment Session</a></p>
+                        </div>
+                        <div class="Collaboration">
+                            <p>
+                                <img src="./images/home_pop_collaboration_n.png" alt="">
+                                <span>COLLABORATION</span>
+                            </p>
+                        </div>
+                        <div class="About">
+                            <p>
+                                <img src="./images/home_pop_about_n.png" alt="">
+                                <span>ABOUT</span>
+                                <p><a href="#">Overview</a></p>
+                                <p><a href="#">Organization</a></p>
+                                <p><a href="#">Campus</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
