@@ -1,0 +1,40 @@
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menu li:nth-child(1){
+    background-color: #39add1;
+}
+
+.menu li:nth-child(2){
+    background-color: #3079ab;
+}
+
+.menu li:nth-child(3){
+    background-color: #982551;
+}
+
+.menu li:nth-child(4){
+    background-color: #e15258;
+}
+
+.menu li:nth-child(5){
+    background-color: #cc6699;
+}
+
+.menu li:nth-child(6){
+    background-color: #52ac43;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}

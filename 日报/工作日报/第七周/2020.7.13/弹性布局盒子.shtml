@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局盒子</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #044bd9;
+            flex-direction: column; /* row column row-reverse column-reverse*/
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            background-color: #eee;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+            font-size: 2em;
+        }
+        .A{
+            background-color: #6dd9bf;
+        }
+        .B{
+            background-color: #50a18e;
+        }
+        .C{
+            background-color: #f2d680;
+        }
+        .D{
+            background-color: #f2916d;
+        }
+        .E{
+            background-color: #f26e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+    </div>
+</body>
+</html>
